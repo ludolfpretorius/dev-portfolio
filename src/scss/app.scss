@@ -1,0 +1,31 @@
+
+$dark: #1f2227;
+
+* {font-family: Sen, Arial, sans-serif}
+body {background-color: $dark; color: #fff;}
+a {text-decoration: none; color: inherit; outline: none;}
+.wrap {max-width: 1200px; margin: auto;}
+
+// Site wrap
+#siteWrap {}
+
+// Nav
+#nav {width: calc(100% - 80px); padding: 20px 40px; position: fixed;
+	#navWrap {display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: auto; 
+		#logo {font-size: 20px}
+		#navLinks ul {list-style: none; padding: 0;
+			li {display: inline-block; font-size: 20px;
+				a {padding: 10px 20px; border-radius: 5px; transition: all .2s ease;
+					&:hover {background-color: #1a1d21}
+				}
+			}
+		}
+	}
+}
+
+// Banner
+#banner {height: 80vh;
+	.wrap {display: flex; align-items: center; height: 100%; font-size: 22px;
+		h1 {line-height: 58px;}
+	}
+}
