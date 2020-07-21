@@ -3,7 +3,8 @@
 
 body {
   background-color: #1f2227;
-  color: #fff; }
+  color: #fff;
+  margin: 0; }
 
 a {
   text-decoration: none;
@@ -14,10 +15,15 @@ a {
   max-width: 1200px;
   margin: auto; }
 
+#siteWrap {
+  padding: 0 20px 100px; }
+
 #nav {
   width: calc(100% - 80px);
   padding: 20px 40px;
-  position: fixed; }
+  position: fixed;
+  background-color: #1f2227;
+  z-index: 2; }
   #nav #navWrap {
     display: flex;
     justify-content: space-between;
@@ -40,11 +46,51 @@ a {
             background-color: #1a1d21; }
 
 #banner {
-  height: 80vh; }
+  height: 90vh; }
   #banner .wrap {
     display: flex;
     align-items: center;
     height: 100%;
     font-size: 22px; }
     #banner .wrap h1 {
-      line-height: 58px; }
+      line-height: 58px;
+      font-weight: 300; }
+
+#projects h4 {
+  text-align: center;
+  color: #f3f3f3;
+  margin-bottom: 60px; }
+
+#projects .wrap {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap; }
+  #projects .wrap .card {
+    width: 30%;
+    display: inline-block;
+    margin: 0 20px 60px; }
+    #projects .wrap .card .thumb-wrap {
+      transition: all 0.2s ease;
+      background-color: blue;
+      box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      object-fit: cover; }
+      #projects .wrap .card .thumb-wrap img {
+        max-width: 100%;
+        height: auto;
+        display: block; }
+    #projects .wrap .card h3 {
+      margin: 20px 0 10px; }
+    #projects .wrap .card p {
+      margin: 0; }
+    #projects .wrap .card:hover .thumb-wrap {
+      transform: scale(1.03);
+      box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3); }
+  #projects .wrap .card:last-child {
+    margin-right: auto; }
