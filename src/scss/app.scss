@@ -3,16 +3,18 @@ $dark: #1f2227;
 $darker: #1a1d21;
 
 * {font-family: Sen, Arial, sans-serif}
+body, html {scroll-behavior: smooth}
 body {background-color: $dark; color: #fff; margin: 0;}
 a {text-decoration: none; color: inherit; outline: none;}
 h4 {text-align: center; color: #f3f3f3; margin-bottom: 60px;}
 .wrap {max-width: 1200px; margin: auto;}
+p {opacity: 0.4}
 
 // Site wrap
-#siteWrap {padding: 0 20px 100px;}
+#siteWrap {padding: 0 20px 100px; position: relative; min-height: calc(100vh - 196px)}
 
 // Nav
-#nav {width: calc(100% - 80px); padding: 20px 40px; position: fixed; background-color: $dark; z-index: 2;
+#nav {width: calc(100% - 80px); padding: 20px 40px; position: fixed; top: 0; background-color: $dark; z-index: 2;
 	#navWrap {display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: auto; 
 		#logo {font-size: 20px}
 		#navLinks ul {list-style: none; padding: 0;
@@ -26,9 +28,10 @@ h4 {text-align: center; color: #f3f3f3; margin-bottom: 60px;}
 }
 
 // Banner
-#banner {height: 90vh;
-	.wrap {display: flex; align-items: center; height: 100%; font-size: 22px;
-		h1 {line-height: 58px; font-weight: 300}
+#banner {height: 100vh; margin-top: 20px;	
+	.wrap {width: 900px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; font-size: 22px; 
+		img {height: 200px; width: auto; margin-right: 30px;}
+		h1 {line-height: 58px; font-weight: 300; font-size: 36px; text-align: center}
 	}
 }
 
@@ -36,23 +39,46 @@ h4 {text-align: center; color: #f3f3f3; margin-bottom: 60px;}
 #projects {margin-bottom: 200px;
 	.wrap {display: flex; justify-content: center; flex-flow: row wrap; 
 		.card {width: 30%; display: inline-block; margin: 0 20px 60px; 
-			.thumb-wrap {transition: all 0.2s ease; background-color: blue; box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3); border-radius: 5px; display: flex; justify-content: center; align-items: center; width: 100%; height: 200px; overflow: hidden; object-fit: cover;
+			.thumb-wrap {transition: all 0.2s ease; background-color: $darker; box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3); border-radius: 5px; display: flex; justify-content: center; align-items: center; width: 100%; height: 220px; overflow: hidden; object-fit: cover;
 				img {max-width: 100%; height: auto; display: block;}
 			}
 			h3 {margin: 20px 0 10px;}
 			p {margin: 0;}
 			&:hover {
-				.thumb-wrap {transform: scale(1.03); box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3);}
+				.thumb-wrap {transform: scale(1.03); box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);}
 			}
 		}
 	}
 }
 
-// Tech
-#tech {
-	.wrap { 
-		#logoWrap {display: flex; flex-wrap: wrap; justify-content: center;
-			img {width: 100px; opacity: 0.4; margin: 0 20px 20px;}
+// Footer
+#footer {background-color: $darker; position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px 0; text-align: center; overflow: hidden;}
+
+// Certs
+#certs {margin-top: 96px; padding-top: 40px;
+	.wrap {max-width: 900px; display: flex; justify-content: center; align-items: baseline; flex-flow: row wrap;
+		a {width: 160px; display: inline-flex; flex-flow: column nowrap; justify-content: center; margin: 0 20px 40px;
+			img {height: 90px; width: auto; transition: all 0.2s ease;}
+			p {text-align: center; transition: all 0.2s ease; opacity: 1}
+			&:hover {
+				img {transform: translateY(-6px)}
+				// p {transform: translateY(3px);}
+			}
 		}
 	}
+}
+
+// Login
+.login-content-wrap {display: flex; justify-content: center; align-items: center; height: 90vh; flex-direction: column;
+	h3 {font-size: 25px; margin: 0;}
+	p {text-align: center; margin: 10px 0 30px;}
+	form {width: 360px;
+		#inputWrap {position: relative; width: 360px;
+			input {box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3); display: block; margin: auto; background-color: #fff!important; border: none; transition: all .2s ease; font-size: 13px; font-weight: 400; line-height: 20px; border-radius: 5px; height: 36px; width: 310px; padding: 8px 20px 8px; background: #fff; outline: none;}
+			input:focus {transform: scale(1.03);}
+			button.submit {position: absolute; right: 10px; top: 0; bottom: 0; margin: auto; font-size: 20px; font-weight: 700; background-color: transparent; outline: none; color: #28c089; cursor: pointer; border: none; width: 50px; height: 50px; }
+		}
+	}
+	.alert.danger {background-color: #ff5f5f; left: 0; right: 0; top: 4px; margin-top: 20px; color: #fff; display: block; width: 340px; padding: 10px 10px; border-radius: 5px; text-align: center; opacity: 0; transform: translateY(20px); transition: all .4s cubic-bezier(0.6, 0.41, 0.29, 1.65);}
+	.alert.danger.show {opacity: 1!important; transform: translateY(0);}
 }

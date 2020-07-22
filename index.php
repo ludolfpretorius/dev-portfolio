@@ -10,18 +10,20 @@
 <body>
 
 	<div id="siteWrap">
+
 		<!-- Nav -->
 		<div id="nav">
 			<div id="navWrap">
-				<div id="logo">
+				<a id="logo" href="/">
 					Ludolf Pretorius
-				</div>
+				</a>
 				<div id="navLinks">
 					<ul>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Tech</a></li>
-						<li><a href="#">Experience</a></li>
-						<li><a href="#">About</a></li>
+						<li><a href="#">Top</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<!-- <li><a href="#">Tech</a></li> -->
+						<!-- <li><a href="#">Experience</a></li> -->
+						<li><a href="/certs.php">Certs</a></li>
 					</ul>
 				</div>
 			</div>
@@ -30,8 +32,9 @@
 		<!-- Banner -->
 		<div id="banner">
 			<div class="wrap">
+				<img src="./dist/img/avatar.png" alt="avatar">
 				<h1>
-					Hey, I'm Ludolf and I'm pretty much obsessed with code&nbsp;—&nbsp;all I ever want to do is learn more 🤩
+					Hey, I'm Ludolf and I'm pretty much obsessed with code&nbsp;—&nbsp;all I want to do is learn more! 🤩
 				</h1>
 			</div>
 		</div>
@@ -40,12 +43,12 @@
 		<div id="projects">
 			<h4>Projects</h4>
 			<div class="wrap">
-				<a class="card" href="#" target="_blank">
+				<a class="card" href="https://chrome.google.com/webstore/detail/newnote/colcgahhbcomhibjcekokebaecjiblbg" target="_blank">
 					<div class="thumb-wrap">
-						<img src="https://urspace.sfo2.cdn.digitaloceanspaces.com/companies/urspace/urspace.svg" alt="thumbnail">
+						<img src="./dist/img/newnote.png" alt="thumbnail">
 					</div>
-					<h3>Name</h3>
-					<p>Some info about the project</p>
+					<h3>NewNote</h3>
+					<p>A notepad extension for Chrome </p>
 				</a>
 				<a class="card" href="#" target="_blank">
 					<div class="thumb-wrap">
@@ -78,18 +81,8 @@
 			</div>
 		</div>
 
-		<!-- Tech -->
-		<div id="tech">
-			<h4>Tech</h4>
-			<div class="wrap">
-				<div id="logoWrap">
-					<img class="logo" src="https://urspace.sfo2.cdn.digitaloceanspaces.com/companies/urspace/urspace.svg" alt="logo">
-					<img class="logo" src="https://urspace.sfo2.cdn.digitaloceanspaces.com/companies/urspace/urspace.svg" alt="logo">
-					<img class="logo" src="https://urspace.sfo2.cdn.digitaloceanspaces.com/companies/urspace/urspace.svg" alt="logo">
-					<img class="logo" src="https://urspace.sfo2.cdn.digitaloceanspaces.com/companies/urspace/urspace.svg" alt="logo">
-					<img class="logo" src="https://urspace.sfo2.cdn.digitaloceanspaces.com/companies/urspace/urspace.svg" alt="logo">
-				</div>
-			</div>
+		<div id="footer">
+			<p>Lekker man, lekker!</p>
 		</div>
 
 	</div>
