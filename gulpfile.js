@@ -43,5 +43,5 @@ function watchFiles(){
 	watch('src/js/app.js', script)
 }
 
-task('default', parallel(compileSass, style, script, watchFiles))
+task('default', series(compileSass, style, script, watchFiles))
 // task('watch', series(watchFiles))
