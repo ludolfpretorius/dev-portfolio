@@ -19,7 +19,7 @@
 			</a>
 			<div id="navLinks">
 				<ul>
-					<li><a href="/"></a></li>
+					<li><a href="/">Home</a></li>
 				</ul>
 			</div>
 		</div>

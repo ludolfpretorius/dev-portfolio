@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Ludolf</title>
 	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./dist/css/app.min.css">
 </head>
@@ -19,7 +20,7 @@
 				</a>
 				<div id="navLinks">
 					<ul>
-						<li><a href="#">Top</a></li>
+						<li><a href="#">Home</a></li>
 						<li><a href="#projects">Projects</a></li>
 						<!-- <li><a href="#">Tech</a></li> -->
 						<!-- <li><a href="#">Experience</a></li> -->
@@ -43,44 +44,58 @@
 		<div id="projects">
 			<h4>Projects</h4>
 			<div class="wrap">
-				<a class="card" href="https://chrome.google.com/webstore/detail/newnote/colcgahhbcomhibjcekokebaecjiblbg" target="_blank">
-					<div class="thumb-wrap">
-						<img src="./dist/img/newnote.png" alt="thumbnail">
-					</div>
-					<h3>NewNote</h3>
-					<p>A notepad extension for Chrome </p>
-				</a>
-				<a class="card" href="#" target="_blank">
-					<div class="thumb-wrap">
-						<img src="https://urspace.sfo2.cdn.digitaloceanspaces.com/companies/urspace/urspace.svg" alt="thumbnail">
-					</div>
-					<h3>Name</h3>
-					<p>Some info about the project</p>
-				</a>
-				<a class="card" href="#" target="_blank">
-					<div class="thumb-wrap">
-						<img src="https://urspace.sfo2.cdn.digitaloceanspaces.com/companies/urspace/urspace.svg" alt="thumbnail">
-					</div>
-					<h3>Name</h3>
-					<p>Some info about the project</p>
-				</a>
-				<a class="card" href="#" target="_blank">
-					<div class="thumb-wrap">
-						<img src="https://urspace.sfo2.cdn.digitaloceanspaces.com/companies/urspace/urspace.svg" alt="thumbnail">
-					</div>
-					<h3>Name</h3>
-					<p>Some info about the project</p>
-				</a>
-				<a class="card" href="#" target="_blank">
-					<div class="thumb-wrap">
-						<img src="https://urspace.sfo2.cdn.digitaloceanspaces.com/companies/urspace/urspace.svg" alt="thumbnail">
-					</div>
-					<h3>Name</h3>
-					<p>Some info about the project</p>
-				</a>
+
+				<div id="projectFilter">
+					<div id="tool" class="filter" onclick="genProjects(event)">Tools</div>
+					<div id="edTech" class="filter" onclick="genProjects(event)">Ed-tech</div>
+					<div id="fun" class="filter" onclick="genProjects(event)">Fun</div>
+					<div id="site" class="filter" onclick="genProjects(event)">Sites</div>
+				</div>
+				<div id="projectsWrap"></div>
+				<?php 
+					$js = file_get_contents('./db/projects.json');
+					$projects = json_decode($js);
+					echo "<script class=\"script\">
+						const projects = $js
+						document.querySelector('.script').remove()
+					</script>"
+				?>
+				<script>
+					function genProjects() {
+						const filters = document.querySelectorAll('.filter')
+						const proWrap = document.querySelector('#projectsWrap')
+						proWrap.innerHTML = ''
+						filters.forEach(a => {
+							a.classList.remove('show')
+							event.currentTarget.classList.add('show')
+						})
+						projects.forEach(pro => {
+							if (pro.type === event.currentTarget.id) {
+								const card = `<div class="card" target="_blank">
+									<div class="thumb-wrap">
+										<div class="overlay" style="opacity: 0">
+											<a href="${pro.github}" target="_blank" class="github">
+												<i class="fab fa-github"></i>
+											</a>
+											<a href="${pro.url}" target="_blank" class="url">
+												<i class="fas fa-external-link-alt"></i>
+											</a>
+										</div>
+										<img src="./dist/img/${pro.thumb}" alt="thumbnail">
+									</div>
+									<h3>${pro.name}</h3>
+									<p>${pro.description}</p>
+								</div>`
+								proWrap.insertAdjacentHTML('beforeend', card)
+							}
+						})
+					}
+					document.querySelector('#tool').click()
+				</script>
 			</div>
 		</div>
-
+		
+		<!-- Footer -->
 		<div id="footer">
 			<p>Lekker man, lekker!</p>
 		</div>

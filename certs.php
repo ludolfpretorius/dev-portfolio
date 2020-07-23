@@ -20,7 +20,8 @@
 				</a>
 				<div id="navLinks">
 					<ul>
-						<li><a href="/"></a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="javascript:;">Logout</a></li>
 					</ul>
 				</div>
 			</div>
@@ -34,27 +35,27 @@
 					<img src="./dist/img/pdf.svg">
 					<p>ND - Graphic Design & Illustration</p>
 				</a>
-				<a class="doc" href="./dist/files/LudolfPretorius_ND.pdf" target="_blank">
+				<a class="doc unavailable" onclick="alert('This certificate is unfortunately unavailable')">
 					<img src="./dist/img/pdf.svg">
 					<p>OCC - HTML, CSS & JQuery</p>
 				</a>
-				<a class="doc" href="./dist/files/LudolfPretorius_ND.pdf" target="_blank">
+				<a class="doc unavailable" onclick="alert('This certificate is unfortunately unavailable')">
 					<img src="./dist/img/pdf.svg">
 					<p>OCC - PHP Basics</p>
 				</a>
-				<a class="doc" href="./dist/files/LudolfPretorius_ND.pdf" target="_blank">
+				<a class="doc" href="./dist/files/OCC - The Complete Web Developer - ZTM (JS-React-Node-PostgreSQL).pdf" target="_blank">
 					<img src="./dist/img/pdf.svg">
 					<p>OCC - The Complete Web Developer: ZTM (JS, React, Node, Postgres)</p>
 				</a>
-				<a class="doc" href="./dist/files/LudolfPretorius_ND.pdf" target="_blank">
+				<a class="doc" href="./dist/files/OCC - Advanced JavaScript Concepts.pdf" target="_blank">
 					<img src="./dist/img/pdf.svg">
-					<p>OCC - JavaScript: The Advanced Concepts</p>
+					<p>OCC - Advanced JavaScript Concepts</p>
 				</a>
-				<a class="doc" href="./dist/files/LudolfPretorius_ND.pdf" target="_blank">
+				<a class="doc" href="./dist/files/OCC - Learning Vue.js.pdf" target="_blank">
 					<img src="./dist/img/pdf.svg">
 					<p>OCC - Learning Vue.js</p>
 				</a>
-				<a class="doc" href="./dist/files/LudolfPretorius_ND.pdf" target="_blank">
+				<a class="doc unavailable" onclick="alert('I am currently in the process of completing this course')">
 					<img src="./dist/img/pdf.svg">
 					<p>OCC - JavaScript Algorithms and Data Structures Masterclass</p>
 				</a>
@@ -65,19 +66,20 @@
 			<p>Lekker man, lekker!</p>
 		</div>
 		
-		<script>
-			const certPar = [...document.querySelectorAll('.doc p')]
-			function ellips(targ) {
-				for (let i = 0; i < targ.length; i++) {
-					if (targ[i].innerText.length > 31) {
-						targ[i].innerText = targ[i].innerText.slice(0, 31).trim() + '...'
-					}
-				}
-			}
-			ellips(certPar)
-		</script>
 
 	</div>
+
+	<script>
+		const certPar = [...document.querySelectorAll('.doc p')]
+		function ellips(targ) {
+			for (let i = 0; i < targ.length; i++) {
+				if (targ[i].innerText.length > 31) {
+					targ[i].innerText = targ[i].innerText.slice(0, 31).trim() + '...'
+				}
+			}
+		}
+		ellips(certPar)
+	</script>
 	<script src="./dist/js/app.min.js"></script>
 
 </body>

@@ -82,15 +82,40 @@ p {
 
 #projects {
   margin-bottom: 200px; }
-  #projects .wrap {
+  #projects h4 {
+    margin-bottom: 20px; }
+  #projects .wrap #projectFilter {
     display: flex;
-    justify-content: center;
-    flex-flow: row wrap; }
-    #projects .wrap .card {
-      width: 30%;
+    margin: 0 auto 60px;
+    width: 327.09px;
+    border: 1px solid #26343d;
+    border-radius: 5px;
+    overflow: hidden; }
+    #projects .wrap #projectFilter div {
+      border-right: 1px solid #26343d;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: all 0.2s ease; }
+      #projects .wrap #projectFilter div:hover {
+        background-color: #1a1d21; }
+      #projects .wrap #projectFilter div:last-child {
+        border-right: none; }
+    #projects .wrap #projectFilter div.show {
+      background-color: #1a1d21; }
+  #projects .wrap #projectsWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%; }
+    #projects .wrap #projectsWrap .card {
+      width: 28%;
       display: inline-block;
-      margin: 0 20px 60px; }
-      #projects .wrap .card .thumb-wrap {
+      margin: 0 30px 60px;
+      position: relative; }
+      #projects .wrap #projectsWrap .card .thumb-wrap {
+        width: 100%;
+        height: 208px;
+        position: relative;
         transition: all 0.2s ease;
         background-color: #1a1d21;
         box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3);
@@ -98,29 +123,74 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 220px;
         overflow: hidden;
         object-fit: cover; }
-        #projects .wrap .card .thumb-wrap img {
+        #projects .wrap #projectsWrap .card .thumb-wrap .overlay {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          background-color: rgba(0, 0, 0, 0.7);
+          transition: all 0.2s ease;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0; }
+          #projects .wrap #projectsWrap .card .thumb-wrap .overlay a {
+            transition: all 0.4s ease;
+            transform: translateY(40px);
+            display: block;
+            width: 26px;
+            height: 26px;
+            font-size: 26px;
+            padding: 18px;
+            margin: 0 8px;
+            border-radius: 100%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #006fff;
+            box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3); }
+            #projects .wrap #projectsWrap .card .thumb-wrap .overlay a .fa-external-link-alt {
+              font-size: 20px; }
+            #projects .wrap #projectsWrap .card .thumb-wrap .overlay a:hover {
+              transition: all 0.2s ease !important;
+              background-color: #0059cc; }
+          #projects .wrap #projectsWrap .card .thumb-wrap .overlay a.url {
+            transition: all 0.4s ease 0.06s; }
+        #projects .wrap #projectsWrap .card .thumb-wrap img {
           max-width: 100%;
           height: auto;
           display: block; }
-      #projects .wrap .card h3 {
+      #projects .wrap #projectsWrap .card:hover .overlay {
+        opacity: 1 !important; }
+        #projects .wrap #projectsWrap .card:hover .overlay a {
+          transform: translateY(0); }
+      #projects .wrap #projectsWrap .card h3 {
         margin: 20px 0 10px; }
-      #projects .wrap .card p {
+      #projects .wrap #projectsWrap .card p {
         margin: 0; }
-      #projects .wrap .card:hover .thumb-wrap {
+      #projects .wrap #projectsWrap .card div.github {
+        display: inline-block;
+        height: 26px;
+        width: 26px;
+        font-size: 26px;
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        cursor: pointer; }
+      #projects .wrap #projectsWrap .card:hover .thumb-wrap {
         transform: scale(1.03);
         box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3); }
 
 #footer {
-  background-color: #1a1d21;
+  border-top: 1px solid #26343d;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 30px 0;
+  padding: 20px 0;
   text-align: center;
   overflow: hidden; }
 
@@ -149,6 +219,10 @@ p {
         opacity: 1; }
       #certs .wrap a:hover img {
         transform: translateY(-6px); }
+    #certs .wrap a.unavailable img {
+      filter: grayscale(100%); }
+    #certs .wrap a.unavailable:hover img {
+      transform: translateY(0); }
 
 .login-content-wrap {
   display: flex;

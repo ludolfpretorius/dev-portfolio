@@ -1,0 +1,50 @@
+[
+  {
+    "name":"Web Scraper",
+    "description":"Webscraper built with Node and Vue—scrapes 5 classifieds sites based on search",
+    "thumb":"smerch.png",
+    "url":"#",
+    "github":"https://github.com/ludolfpretorius/merch",
+    "type":"tool"
+  },
+  {
+    "name":"Asset library",
+    "description":"A dashboard to manage visual assets (password: Brieftemp99!)",
+    "thumb":"assetlib.png",
+    "url":"http://assetlib.ludolf.co.za",
+    "github":"https://github.com/ludolfpretorius/asset-library",
+    "type":"tool"
+  },
+  {
+    "name":"NewNote",
+    "description":"A notepad extension for Chrome",
+    "thumb":"newnote.png",
+    "url":"https://chrome.google.com/webstore/detail/newnote/colcgahhbcomhibjcekokebaecjiblbg",
+    "github":"https://github.com/ludolfpretorius/newnote",
+    "type":"tool"
+  },
+  {
+    "name":"Invoice Builder",
+    "description":"Vue.js tool to make custom invoices",
+    "thumb":"invoice.png",
+    "url":"http://invoicemaker.ludolf.co.za/",
+    "github":"https://github.com/ludolfpretorius/invoice-maker",
+    "type":"tool"
+  },
+  {
+    "name":"CSS Gradient Generator",
+    "description":"Dynamic CSS gradient generator",
+    "thumb":"gradient.png",
+    "url":"http://gradient.ludolf.co.za",
+    "github":"https://github.com/ludolfpretorius/gradient-gen",
+    "type":"tool"
+  },
+  {
+    "name":"Making Math",
+    "description":"A game that praises or insults you based on your answers to math questions",
+    "thumb":"math.png",
+    "url":"http://math.ludolf.co.za",
+    "github":"https://github.com/ludolfpretorius/making-math",
+    "type":"fun"
+  }
+]

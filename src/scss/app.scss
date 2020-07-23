@@ -1,6 +1,8 @@
 
 $dark: #1f2227;
 $darker: #1a1d21;
+$light: #26343d;
+$blue: #006fff;
 
 * {font-family: Sen, Arial, sans-serif}
 body, html {scroll-behavior: smooth}
@@ -37,22 +39,45 @@ p {opacity: 0.4}
 
 // Projects
 #projects {margin-bottom: 200px;
-	.wrap {display: flex; justify-content: center; flex-flow: row wrap; 
-		.card {width: 30%; display: inline-block; margin: 0 20px 60px; 
-			.thumb-wrap {transition: all 0.2s ease; background-color: $darker; box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3); border-radius: 5px; display: flex; justify-content: center; align-items: center; width: 100%; height: 220px; overflow: hidden; object-fit: cover;
-				img {max-width: 100%; height: auto; display: block;}
+	h4 {margin-bottom: 20px}
+	.wrap {
+		#projectFilter {display: flex; margin: 0 auto 60px; width: 327.09px; border: 1px solid $light; border-radius: 5px; overflow: hidden; 
+			div {border-right: 1px solid $light; padding: 10px 20px; cursor: pointer; transition: all 0.2s ease;
+				&:hover {background-color: $darker;}
+				&:last-child {border-right: none;}
 			}
-			h3 {margin: 20px 0 10px;}
-			p {margin: 0;}
-			&:hover {
-				.thumb-wrap {transform: scale(1.03); box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);}
+			div.show {background-color: $darker;}
+		}
+		#projectsWrap {display: flex; justify-content: space-between; flex-flow: row wrap; width: 100%;
+			.card {width: 28%; display: inline-block; margin: 0 30px 60px; position: relative; 
+				.thumb-wrap {width: 100%; height: 208px; position: relative; transition: all 0.2s ease; background-color: $darker; box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3); border-radius: 5px; display: flex; justify-content: center; align-items: center; overflow: hidden; object-fit: cover;
+					.overlay {display: flex; justify-content: center; align-items: center; opacity: 0; background-color: rgba(0,0,0,0.7); transition: all 0.2s ease; position: absolute; height: 100%; width: 100%; top: 0; left: 0;
+						a {transition: all 0.4s ease; transform: translateY(40px); display: block; width: 26px; height: 26px; font-size: 26px; padding: 18px; margin: 0 8px; border-radius: 100%; display: inline-flex; justify-content: center; align-items: center; background-color: $blue; box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3);
+							.fa-external-link-alt {font-size: 20px;}
+							&:hover {transition: all 0.2s ease!important; background-color: darken($blue, 10%);}
+						}
+						a.url {transition: all 0.4s ease 0.06s;}
+					}
+					img {max-width: 100%; height: auto; display: block;}
+				}
+				&:hover {
+					.overlay {opacity: 1!important;
+						a {transform: translateY(0);}
+					}
+				}
+				h3 {margin: 20px 0 10px;}
+				p {margin: 0;}
+				div.github {display: inline-block; height: 26px; width: 26px; font-size: 26px; position: absolute; bottom: 20px; right: 0; cursor: pointer;}
+				&:hover {
+					.thumb-wrap {transform: scale(1.03); box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.3);}
+				}
 			}
 		}
 	}
 }
 
 // Footer
-#footer {background-color: $darker; position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px 0; text-align: center; overflow: hidden;}
+#footer {border-top: 1px solid $light; position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px 0; text-align: center; overflow: hidden;}
 
 // Certs
 #certs {margin-top: 96px; padding-top: 40px;
@@ -64,6 +89,10 @@ p {opacity: 0.4}
 				img {transform: translateY(-6px)}
 				// p {transform: translateY(3px);}
 			}
+		}
+		a.unavailable {
+			img {filter: grayscale(100%);}
+			&:hover img {transform: translateY(0);}
 		}
 	}
 }
