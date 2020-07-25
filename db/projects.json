@@ -3,11 +3,11 @@
     "name":"Web Scraper",
     "description":"Webscraper built with Node and Vue—scrapes 5 classifieds sites based on search",
     "thumb":"smerch.png",
-    "url":"#",
+    "url":"",
     "github":"https://github.com/ludolfpretorius/merch",
     "type":"tool"
   },
-  {
+  { 
     "name":"Asset library",
     "description":"A dashboard to manage visual assets (password: Brieftemp99!)",
     "thumb":"assetlib.png",
@@ -46,5 +46,37 @@
     "url":"http://math.ludolf.co.za",
     "github":"https://github.com/ludolfpretorius/making-math",
     "type":"fun"
+  },
+  {//============================================
+    "name":"SATTA",
+    "description":"WordPress",
+    "thumb":"satta.jpg",
+    "url":"http://satta.org.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"CubedIT",
+    "description":"Static one-pager",
+    "thumb":"cubed.jpg",
+    "url":"http://www.cubedit.co.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"McWilliams & Elliott",
+    "description":"Front-end for Ruby on Rails back-end",
+    "thumb":"mcwilliams.jpg",
+    "url":"http://www.mcwilliams.co.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"Athlete Profile",
+    "description":"Static website",
+    "thumb":"bloed.jpg",
+    "url":"http://bloed.ludolf.co.za/index.html",
+    "github":"",
+    "type":"site"
   }
 ]

@@ -1,3 +1,4 @@
+<?php require('./dist/controllers/checkuser.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +26,7 @@
 						<!-- <li><a href="#">Tech</a></li> -->
 						<!-- <li><a href="#">Experience</a></li> -->
 						<li><a href="/certs.php">Certs</a></li>
+						<li><a href="javascript:;" id="logout">Log out</a></li>
 					</ul>
 				</div>
 			</div>
@@ -54,7 +56,6 @@
 				<div id="projectsWrap"></div>
 				<?php 
 					$js = file_get_contents('./db/projects.json');
-					$projects = json_decode($js);
 					echo "<script class=\"script\">
 						const projects = $js
 						document.querySelector('.script').remove()
@@ -74,12 +75,12 @@
 								const card = `<div class="card" target="_blank">
 									<div class="thumb-wrap">
 										<div class="overlay" style="opacity: 0">
-											<a href="${pro.github}" target="_blank" class="github">
+											${pro.github.length ? `<a href="${pro.github}" target="_blank" class="github">
 												<i class="fab fa-github"></i>
-											</a>
-											<a href="${pro.url}" target="_blank" class="url">
+											</a>` : ''}
+											${pro.url.length ? `<a href="${pro.url}" target="_blank" class="url">
 												<i class="fas fa-external-link-alt"></i>
-											</a>
+											</a>` : ''}
 										</div>
 										<img src="./dist/img/${pro.thumb}" alt="thumbnail">
 									</div>

@@ -12,29 +12,31 @@
 <body>
 	
 	<!-- Nav -->
-	<div id="nav">
+	<!-- <div id="nav">
 		<div id="navWrap">
 			<a id="logo" href="/">
 				Ludolf Pretorius
 			</a>
 			<div id="navLinks">
 				<ul>
-					<li><a href="/">Home</a></li>
+					<li><a href="#"></a></li>
 				</ul>
 			</div>
 		</div>
-	</div>
+	</div> -->
 		
-	<div class="login-content-wrap">	
-		<h3>My certs</h3>
-		<p>Please enter the password</p>
+	<div class="login-content-wrap">
+		<img src="./dist/img/avatar.png" alt="avatar">
+		<h3>Ludolf Pretorius</h3>
+		<p>OooOoo do you know the password? 🤨</p>
 		<form action="./dist/controllers/dologin.php" method="POST">
 			<div id="inputWrap">
 				<input type="password" placeholder="Enter password" name="password" required data-lpignore="true">
+				<input type="hidden" name="url" value="" />
 				<button type="submit" name="submit" class="submit"><i class="fas fa-sign-in-alt"></i></button>
 			</div>
 		</form>
-		<div class="alert danger" style="opacity: 0">Oops! The password you entered is incorrect.</div>
+		<div class="alert danger" style="opacity: 0"></div>
 	</div>
 
 	<?php
@@ -47,7 +49,15 @@
 
 	<script>
 		const input = document.querySelector('input')
-		input.focus()		
+		const hiddenInput = document.querySelector('input[type=hidden]')
+		input.focus()
+		hiddenInput.setAttribute('value', window.location.search)
+
+		const arr = ['Ooof! Not quite...', 'Ooof! Not quite...', 'Com\'on, type carefully.', 'Are you trying to hack in???', 'Okay, try ";OR 1=1#"']
+		const myAlert = document.querySelector('.alert')
+		localStorage.attempts = localStorage.attempts ? Number(localStorage.attempts)+1 : 0
+		myAlert.innerText = arr[Number(localStorage.attempts)]
+		Number(localStorage.attempts) >= 4 ? localStorage.attempts = 0 : ''
 	</script>
 	<script src="./dist/js/app.min.js"></script>
 

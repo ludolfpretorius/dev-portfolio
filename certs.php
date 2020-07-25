@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Certs</title>
-
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./dist/css/app.min.css">
 </head>
@@ -21,7 +22,9 @@
 				<div id="navLinks">
 					<ul>
 						<li><a href="/">Home</a></li>
-						<li><a href="javascript:;">Logout</a></li>
+						<li><a href="/#projects">Projects</a></li>
+						<li><a href="/certs.php">Certs</a></li>
+						<li><a href="javascript:;" id="logout">Log out</a></li>
 					</ul>
 				</div>
 			</div>

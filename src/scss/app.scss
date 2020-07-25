@@ -3,6 +3,7 @@ $dark: #1f2227;
 $darker: #1a1d21;
 $light: #26343d;
 $blue: #006fff;
+$red: #fd4233;
 
 * {font-family: Sen, Arial, sans-serif}
 body, html {scroll-behavior: smooth}
@@ -21,8 +22,11 @@ p {opacity: 0.4}
 		#logo {font-size: 20px}
 		#navLinks ul {list-style: none; padding: 0;
 			li {display: inline-block; font-size: 20px;
-				a {padding: 10px 20px; border-radius: 5px; transition: all .2s ease;
+				a {display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; border-radius: 5px; transition: all .2s ease;
 					&:hover {background-color: $darker}
+				}
+				a#logout {border: 1px solid $red; color: #fff; padding-top: 8px; margin-left: 10px;
+					&:hover {background-color: $red;}
 				}
 			}
 		}
@@ -32,7 +36,7 @@ p {opacity: 0.4}
 // Banner
 #banner {height: 100vh; margin-top: 20px;	
 	.wrap {width: 900px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; font-size: 22px; 
-		img {height: 200px; width: auto; margin-right: 30px;}
+		img {height: 200px; width: auto;}
 		h1 {line-height: 58px; font-weight: 300; font-size: 36px; text-align: center}
 	}
 }
@@ -56,9 +60,9 @@ p {opacity: 0.4}
 							.fa-external-link-alt {font-size: 20px;}
 							&:hover {transition: all 0.2s ease!important; background-color: darken($blue, 10%);}
 						}
-						a.url {transition: all 0.4s ease 0.06s;}
+						a:nth-child(2) {transition: all 0.4s ease 0.06s;}
 					}
-					img {max-width: 100%; height: auto; display: block;}
+					img {object-fit: cover; width: 100%; height: 100%;}
 				}
 				&:hover {
 					.overlay {opacity: 1!important;
@@ -99,8 +103,9 @@ p {opacity: 0.4}
 
 // Login
 .login-content-wrap {display: flex; justify-content: center; align-items: center; height: 90vh; flex-direction: column;
+	img {height: 100px; width: auto; margin-bottom: 20px;}
 	h3 {font-size: 25px; margin: 0;}
-	p {text-align: center; margin: 10px 0 30px;}
+	p {text-align: center; margin: 10px 0 30px; color: #75777a; opacity: 1;}
 	form {width: 360px;
 		#inputWrap {position: relative; width: 360px;
 			input {box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3); display: block; margin: auto; background-color: #fff!important; border: none; transition: all .2s ease; font-size: 13px; font-weight: 400; line-height: 20px; border-radius: 5px; height: 36px; width: 310px; padding: 8px 20px 8px; background: #fff; outline: none;}

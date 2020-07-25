@@ -53,11 +53,21 @@ p {
         display: inline-block;
         font-size: 20px; }
         #nav #navWrap #navLinks ul li a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
           padding: 10px 20px;
           border-radius: 5px;
           transition: all .2s ease; }
           #nav #navWrap #navLinks ul li a:hover {
             background-color: #1a1d21; }
+        #nav #navWrap #navLinks ul li a#logout {
+          border: 1px solid #fd4233;
+          color: #fff;
+          padding-top: 8px;
+          margin-left: 10px; }
+          #nav #navWrap #navLinks ul li a#logout:hover {
+            background-color: #fd4233; }
 
 #banner {
   height: 100vh;
@@ -72,8 +82,7 @@ p {
     font-size: 22px; }
     #banner .wrap img {
       height: 200px;
-      width: auto;
-      margin-right: 30px; }
+      width: auto; }
     #banner .wrap h1 {
       line-height: 58px;
       font-weight: 300;
@@ -157,12 +166,12 @@ p {
             #projects .wrap #projectsWrap .card .thumb-wrap .overlay a:hover {
               transition: all 0.2s ease !important;
               background-color: #0059cc; }
-          #projects .wrap #projectsWrap .card .thumb-wrap .overlay a.url {
+          #projects .wrap #projectsWrap .card .thumb-wrap .overlay a:nth-child(2) {
             transition: all 0.4s ease 0.06s; }
         #projects .wrap #projectsWrap .card .thumb-wrap img {
-          max-width: 100%;
-          height: auto;
-          display: block; }
+          object-fit: cover;
+          width: 100%;
+          height: 100%; }
       #projects .wrap #projectsWrap .card:hover .overlay {
         opacity: 1 !important; }
         #projects .wrap #projectsWrap .card:hover .overlay a {
@@ -230,12 +239,18 @@ p {
   align-items: center;
   height: 90vh;
   flex-direction: column; }
+  .login-content-wrap img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 20px; }
   .login-content-wrap h3 {
     font-size: 25px;
     margin: 0; }
   .login-content-wrap p {
     text-align: center;
-    margin: 10px 0 30px; }
+    margin: 10px 0 30px;
+    color: #75777a;
+    opacity: 1; }
   .login-content-wrap form {
     width: 360px; }
     .login-content-wrap form #inputWrap {
