@@ -65,8 +65,11 @@
 			</div>
 		</div>
 		
+		<!-- Footer -->
 		<div id="footer">
-			<p>Lekker man, lekker!</p>
+			<!-- <p>More links:</p> -->
+			<a href="https://stackoverflow.com/users/11472399/ludolfyn" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+			<a href="https://github.com/ludolfpretorius" target="_blank"><i class="fab fa-github"></i></a>
 		</div>
 		
 

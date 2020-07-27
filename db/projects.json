@@ -36,7 +36,15 @@
     "description":"Dynamic CSS gradient generator",
     "thumb":"gradient.png",
     "url":"http://gradient.ludolf.co.za",
-    "github":"https://github.com/ludolfpretorius/gradient-gen",
+    "github":"https://github.com/ludolfpretorius/css-gradient-generator",
+    "type":"tool"
+  },
+  {
+    "name":"Email Signature Generator",
+    "description":"A tool to create email signatures for 2U and its brands",
+    "thumb":"email.png",
+    "url":"http://email.ludolf.co.za",
+    "github":"",
     "type":"tool"
   },
   {
@@ -78,5 +86,61 @@
     "url":"http://bloed.ludolf.co.za/index.html",
     "github":"",
     "type":"site"
-  }
+  },
+  {//============================================
+    "name":"Strategy Structure Plot (NU)",
+    "description":"Illustrating the use of the strategy structure plotting tool",
+    "thumb":"strategy.png",
+    "url":"http://strategy.ludolf.co.za/",
+    "github":"",
+    "type":"edTech"
+  },
+  {
+    "name":"Knowledge Management Tool (NU)",
+    "description":"Illustrating the use of the knowledge management tool (gamified)",
+    "thumb":"knowledge.png",
+    "url":"http://knowledge.ludolf.co.za/",
+    "github":"",
+    "type":"edTech"
+  },
+  {
+    "name":"Dice Throw Analogy (Yale)",
+    "description":"Illustrating unintuitive decisions pertaining to financial risk (gamified)",
+    "thumb":"dice.png",
+    "url":"http://dice.ludolf.co.za/",
+    "github":"",
+    "type":"edTech"
+  },
+  {
+    "name":"4-Caps Skills Profile (MIT)",
+    "description":"Allowing users to do a 4-caps skills assessment",
+    "thumb":"skills.png",
+    "url":"http://skills.ludolf.co.za/",
+    "github":"",
+    "type":"edTech"
+  },
+  {
+    "name":"Management Systems (Oxford)",
+    "description":"Allowing users to map the design of their management systems",
+    "thumb":"design.png",
+    "url":"http://design.ludolf.co.za/",
+    "github":"",
+    "type":"edTech"
+  },
+  {
+    "name":"The Role of Brokers (Harvard)",
+    "description":"Illustrating the role of brokers in the life policies space",
+    "thumb":"brokers.png",
+    "url":"http://brokers.ludolf.co.za/",
+    "github":"",
+    "type":"edTech"
+  },
+  {
+    "name":"PepsiCo's Response (Yale)",
+    "description":"Allowing users to speculate how PepsiCo should respond to a ban of big soda containers",
+    "thumb":"pepsi.png",
+    "url":"http://pepsi.ludolf.co.za/",
+    "github":"",
+    "type":"edTech"
+  },
 ]

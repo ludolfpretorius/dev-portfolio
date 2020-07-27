@@ -81,7 +81,12 @@ p {opacity: 0.4}
 }
 
 // Footer
-#footer {border-top: 1px solid $light; position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px 0; text-align: center; overflow: hidden;}
+#footer {border-top: 1px solid $light; position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px 0; text-align: center; overflow: hidden;
+	p {text-align: center;}
+	a {opacity: 0.4; font-size: 30px; padding: 10px; cursor: pointer; display: inline-block;
+		&:hover {opacity: 1;}
+	}
+}
 
 // Certs
 #certs {margin-top: 96px; padding-top: 40px;

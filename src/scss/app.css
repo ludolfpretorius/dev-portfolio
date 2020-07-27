@@ -199,9 +199,19 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
   overflow: hidden; }
+  #footer p {
+    text-align: center; }
+  #footer a {
+    opacity: 0.4;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block; }
+    #footer a:hover {
+      opacity: 1; }
 
 #certs {
   margin-top: 96px;
