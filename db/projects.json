@@ -56,9 +56,33 @@
     "type":"fun"
   },
   {//============================================
+    "name":"Francarlo Designer Jewellery",
+    "description":"WordPress - ecommerce",
+    "thumb":"francarlo.png",
+    "url":"https://www.francarlo.co.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"McWilliams & Elliott",
+    "description":"Front-end for Ruby on Rails back-end",
+    "thumb":"mcwilliams.jpg",
+    "url":"http://www.mcwilliams.co.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"Eco Clean",
+    "description":"Front-end for Ruby on Rails back-end",
+    "thumb":"eco.png",
+    "url":"http://www.eco-clean.co.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
     "name":"SATTA",
     "description":"WordPress",
-    "thumb":"satta.jpg",
+    "thumb":"satta.png",
     "url":"http://satta.org.za/",
     "github":"",
     "type":"site"
@@ -72,18 +96,34 @@
     "type":"site"
   },
   {
-    "name":"McWilliams & Elliott",
-    "description":"Front-end for Ruby on Rails back-end",
-    "thumb":"mcwilliams.jpg",
-    "url":"http://www.mcwilliams.co.za/",
-    "github":"",
-    "type":"site"
-  },
-  {
     "name":"Athlete Profile",
     "description":"Static website",
     "thumb":"bloed.jpg",
     "url":"http://bloed.ludolf.co.za/index.html",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"Igazi Foundation",
+    "description":"Front-end for Ruby on Rails back-end",
+    "thumb":"igazi.jpg",
+    "url":"https://www.igazi.org.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"Samil Mohair Farm",
+    "description":"Front-end for Ruby on Rails back-end",
+    "thumb":"samil.jpg",
+    "url":"https://www.igazi.org.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"Overland/Cable&co Shoes",
+    "description":"Front-end for Ruby on Rails back-end",
+    "thumb":"overland.jpg",
+    "url":"https://www.cableandco.co.za/",
     "github":"",
     "type":"site"
   },
@@ -121,17 +161,9 @@
   },
   {
     "name":"Management Systems (Oxford)",
-    "description":"Allowing users to map the design of their management systems",
+    "description":"Allowing users to map the design of their management systems - Chart.js",
     "thumb":"design.png",
     "url":"http://design.ludolf.co.za/",
-    "github":"",
-    "type":"edTech"
-  },
-  {
-    "name":"The Role of Brokers (Harvard)",
-    "description":"Illustrating the role of brokers in the life policies space",
-    "thumb":"brokers.png",
-    "url":"http://brokers.ludolf.co.za/",
     "github":"",
     "type":"edTech"
   },
@@ -140,6 +172,30 @@
     "description":"Allowing users to speculate how PepsiCo should respond to a ban of big soda containers",
     "thumb":"pepsi.png",
     "url":"http://pepsi.ludolf.co.za/",
+    "github":"",
+    "type":"edTech"
+  },
+  {
+    "name":"The Diversity Wheel (EGADE Business School)",
+    "description":"Cultural, demographic and individual diversities",
+    "thumb":"diversity.png",
+    "url":"http://diversity.ludolf.co.za/",
+    "github":"",
+    "type":"edTech"
+  },
+  {
+    "name":"Elements of the Cash Flow Pro Forma (Rice)",
+    "description":"Illustrating the elements of the cash flow pro forma",
+    "thumb":"cash.png",
+    "url":"http://cash.ludolf.co.za/",
+    "github":"",
+    "type":"edTech"
+  },
+  {
+    "name":"The Role of Brokers (Harvard)",
+    "description":"Illustrating the role of brokers in the life policies space",
+    "thumb":"brokers.png",
+    "url":"http://brokers.ludolf.co.za/",
     "github":"",
     "type":"edTech"
   },

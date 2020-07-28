@@ -23,9 +23,6 @@
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#projects">Projects</a></li>
-						<!-- <li><a href="#">Tech</a></li> -->
-						<!-- <li><a href="#">Experience</a></li> -->
-						<li><a href="/certs.php">Certs</a></li>
 						<li><a href="javascript:;" id="logout">Log out</a></li>
 					</ul>
 				</div>
@@ -50,8 +47,8 @@
 				<div id="projectFilter">
 					<div id="tool" class="filter" onclick="genProjects(event)">Tools</div>
 					<div id="edTech" class="filter" onclick="genProjects(event)">Ed-tech</div>
-					<div id="fun" class="filter" onclick="genProjects(event)">Fun</div>
 					<div id="site" class="filter" onclick="genProjects(event)">Sites</div>
+					<div id="fun" class="filter" onclick="genProjects(event)">Fun</div>
 				</div>
 				<div id="projectsWrap"></div>
 				<?php 
