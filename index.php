@@ -46,7 +46,7 @@
 
 				<div id="projectFilter">
 					<div id="tool" class="filter" onclick="genProjects(event)">Tools</div>
-					<div id="edTech" class="filter" onclick="genProjects(event)">Ed-tech</div>
+					<div id="edTech" class="filter" onclick="genProjects(event), terms()">Ed-tech</div>
 					<div id="site" class="filter" onclick="genProjects(event)">Sites</div>
 					<div id="fun" class="filter" onclick="genProjects(event)">Fun</div>
 				</div>
@@ -69,7 +69,7 @@
 						})
 						projects.forEach(pro => {
 							if (pro.type === event.currentTarget.id) {
-								const card = `<div class="card" target="_blank">
+								const card = `<div class="card">
 									<div class="thumb-wrap">
 										<div class="overlay" style="opacity: 0">
 											${pro.github.length ? `<a href="${pro.github}" target="_blank" class="github">
@@ -89,6 +89,16 @@
 						})
 					}
 					document.querySelector('#tool').click()
+
+					function terms() {
+						if (!localStorage.accept) {
+							if (confirm('Please note that the universities own the rights to these—please do not share them. By selecting \"OK\", you agree.')) {
+								localStorage.accept = true
+							} else {
+								document.querySelector('#tool').click()
+							}
+						}
+					}
 				</script>
 			</div>
 		</div>
