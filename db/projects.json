@@ -1,7 +1,7 @@
 [
   {
     "name":"Web Scraper",
-    "description":"Webscraper built with Node and Vue—scrapes 5 classifieds sites based on search",
+    "description":"Webscraper—scrapes 5 classifieds sites based on search - Node.js & Vue.js",
     "thumb":"smerch.png",
     "url":"",
     "github":"https://github.com/ludolfpretorius/merch",
@@ -9,15 +9,15 @@
   },
   { 
     "name":"Asset library",
-    "description":"A dashboard to manage visual assets (password: Brieftemp99!)",
+    "description":"A dashboard to manage visual assets (password: Brieftemp99!) - PHP",
     "thumb":"assetlib.png",
-    "url":"http://assetlib.ludolf.co.za",
+    "url":"https://assetlib.ludolf.co.za",
     "github":"https://github.com/ludolfpretorius/asset-library",
     "type":"tool"
   },
   {
     "name":"NewNote",
-    "description":"A notepad extension for Chrome",
+    "description":"A notepad extension for Chrome - Vanilla JS",
     "thumb":"newnote.png",
     "url":"https://chrome.google.com/webstore/detail/newnote/colcgahhbcomhibjcekokebaecjiblbg",
     "github":"https://github.com/ludolfpretorius/newnote",
@@ -25,7 +25,7 @@
   },
   {
     "name":"Invoice Builder",
-    "description":"Vue.js tool to make custom invoices",
+    "description":"Tool to make custom invoices - Vue.js",
     "thumb":"invoice.png",
     "url":"http://invoicemaker.ludolf.co.za/",
     "github":"https://github.com/ludolfpretorius/invoice-maker",
@@ -33,7 +33,7 @@
   },
   {
     "name":"CSS Gradient Generator",
-    "description":"Dynamic CSS gradient generator",
+    "description":"Dynamic CSS gradient generator - Vanilla JS",
     "thumb":"gradient.png",
     "url":"http://gradient.ludolf.co.za",
     "github":"https://github.com/ludolfpretorius/css-gradient-generator",
@@ -41,91 +41,11 @@
   },
   {
     "name":"Email Signature Generator",
-    "description":"A tool to create email signatures for 2U and its brands",
+    "description":"A tool to create email signatures for 2U and its brands - Vanilla JS",
     "thumb":"email.png",
     "url":"http://email.ludolf.co.za",
     "github":"",
     "type":"tool"
-  },
-  {
-    "name":"Making Math",
-    "description":"A game that praises or insults you based on your answers to math questions",
-    "thumb":"math.png",
-    "url":"http://math.ludolf.co.za",
-    "github":"https://github.com/ludolfpretorius/making-math",
-    "type":"fun"
-  },
-  {//============================================
-    "name":"Francarlo Designer Jewellery",
-    "description":"WordPress - ecommerce",
-    "thumb":"francarlo.png",
-    "url":"https://www.francarlo.co.za/",
-    "github":"",
-    "type":"site"
-  },
-  {
-    "name":"McWilliams & Elliott",
-    "description":"Front-end for Ruby on Rails back-end",
-    "thumb":"mcwilliams.jpg",
-    "url":"http://www.mcwilliams.co.za/",
-    "github":"",
-    "type":"site"
-  },
-  {
-    "name":"Eco Clean",
-    "description":"Front-end for Ruby on Rails back-end",
-    "thumb":"eco.png",
-    "url":"http://www.eco-clean.co.za/",
-    "github":"",
-    "type":"site"
-  },
-  {
-    "name":"SATTA",
-    "description":"WordPress",
-    "thumb":"satta.png",
-    "url":"http://satta.org.za/",
-    "github":"",
-    "type":"site"
-  },
-  {
-    "name":"CubedIT",
-    "description":"Static one-pager",
-    "thumb":"cubed.jpg",
-    "url":"http://www.cubedit.co.za/",
-    "github":"",
-    "type":"site"
-  },
-  {
-    "name":"Athlete Profile",
-    "description":"Static website",
-    "thumb":"bloed.jpg",
-    "url":"http://bloed.ludolf.co.za/index.html",
-    "github":"",
-    "type":"site"
-  },
-  {
-    "name":"Igazi Foundation",
-    "description":"Front-end for Ruby on Rails back-end",
-    "thumb":"igazi.jpg",
-    "url":"https://www.igazi.org.za/",
-    "github":"",
-    "type":"site"
-  },
-  {
-    "name":"Samil Mohair",
-    "description":"Front-end for Ruby on Rails back-end",
-    "thumb":"samil.jpg",
-    "url":"https://www.igazi.org.za/",
-    "github":"",
-    "type":"site"
-  },
-  {
-    "name":"Overland/Cable&co Shoes",
-    "description":"Front-end for Ruby on Rails back-end",
-    "thumb":"overland.jpg",
-    "url":"https://www.cableandco.co.za/",
-    "github":"",
-    "type":"site"
   },
   {//============================================
     "name":"Strategy Structure Plot (NU)",
@@ -199,4 +119,84 @@
     "github":"",
     "type":"edTech"
   },
+  {//============================================
+    "name":"Francarlo Designer Jewellery",
+    "description":"WordPress - ecommerce",
+    "thumb":"francarlo.png",
+    "url":"https://www.francarlo.co.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"McWilliams & Elliott",
+    "description":"Front-end for Ruby on Rails back-end",
+    "thumb":"mcwilliams.jpg",
+    "url":"http://www.mcwilliams.co.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"Eco Clean",
+    "description":"Front-end for Ruby on Rails back-end",
+    "thumb":"eco.png",
+    "url":"http://www.eco-clean.co.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"SATTA",
+    "description":"WordPress",
+    "thumb":"satta.png",
+    "url":"http://satta.org.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"CubedIT",
+    "description":"Front-end for Ruby on Rails back-end",
+    "thumb":"cubed.jpg",
+    "url":"http://www.cubedit.co.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"Athlete Profile",
+    "description":"Static website",
+    "thumb":"bloed.jpg",
+    "url":"http://bloed.ludolf.co.za/index.html",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"Igazi Foundation",
+    "description":"Front-end for Ruby on Rails back-end",
+    "thumb":"igazi.jpg",
+    "url":"https://www.igazi.org.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"Samil Mohair",
+    "description":"Front-end for Ruby on Rails back-end",
+    "thumb":"samil.jpg",
+    "url":"https://www.igazi.org.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"Ludolf's Siteshop",
+    "description":"Static Website built with PHP",
+    "thumb":"siteshop.png",
+    "url":"https://siteshop.co.za/",
+    "github":"",
+    "type":"site"
+  },
+  {
+    "name":"Making Math",
+    "description":"A game that praises or insults you based on your answers to math questions",
+    "thumb":"math.png",
+    "url":"http://math.ludolf.co.za",
+    "github":"https://github.com/ludolfpretorius/making-math",
+    "type":"fun"
+  }
 ]

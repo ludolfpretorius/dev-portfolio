@@ -4,7 +4,7 @@
 	$url = isset($_POST['url']) ? substr(filter_var($_POST['url'], FILTER_SANITIZE_STRING), 1) : '';
 	$url = $url === 'certs' ? $url.'.php' : '';
 	$password = isset($_POST['password']) ? filter_var($_POST['password'], FILTER_SANITIZE_STRING) : '';
-	$hash = '$2y$10$.aA.fY9A2EJvrmycUMYd7uQTLmfuCEUrqDI.Kp8XKQLtAqNwB0LHm';
+	$hash = '$2y$10$qaG88BDQvDY3ilCczxH5o.wUj1JAxw5Zd3aId/42L2P00d6ZC1.8e';
 	$query = json_decode(file_get_contents('http://ip-api.com/json/' . $_SERVER['REMOTE_ADDR']));
 
 	function writeToFile($filepath, $details) {
