@@ -96,10 +96,10 @@
     "type":"edTech"
   },
   {
-    "name":"The Diversity Wheel (EGADE Business School)",
-    "description":"Cultural, demographic and individual diversities",
-    "thumb":"diversity.png",
-    "url":"http://diversity.ludolf.co.za/",
+    "name":"How Blockchain Works (University of Cape Town)",
+    "description":"Allowing users to make a Bitcoin transaction and so doing explaining blockchain on a basic level",
+    "thumb":"blockchain.png",
+    "url":"http://blockchain.ludolf.co.za/",
     "github":"",
     "type":"edTech"
   },

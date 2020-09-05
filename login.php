@@ -4,10 +4,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Login</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+	<link rel="manifest" href="./fav/site.webmanifest">
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./dist/css/app.min.css">
+
+	<script type="text/javascript" src="./dist/js/hotjar.js"></script>
+
 </head>
 <body>
 	
@@ -59,7 +67,7 @@
 		myAlert.innerText = arr[Number(localStorage.attempts)]
 		Number(localStorage.attempts) >= 4 ? localStorage.attempts = 0 : ''
 	</script>
-	<script src="./dist/js/app.min.js"></script>
+	<!-- <script src="./dist/js/app.min.js"></script> -->
 
 </body>
 </html>

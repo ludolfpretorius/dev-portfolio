@@ -17,7 +17,7 @@ p {opacity: 0.4}
 #siteWrap {padding: 0 20px 100px; position: relative; min-height: calc(100vh - 196px)}
 
 // Nav
-#nav {width: calc(100% - 80px); padding: 20px 40px; position: fixed; top: 0; background-color: $dark; z-index: 2;
+#nav {width: calc(100% - 80px); padding: 20px 40px; background-color: $dark; z-index: 2;
 	#navWrap {display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: auto; 
 		#logo {font-size: 20px}
 		#navLinks ul {list-style: none; padding: 0;
@@ -34,15 +34,15 @@ p {opacity: 0.4}
 }
 
 // Banner
-#banner {height: 100vh; margin-top: 20px;	
-	.wrap {width: 900px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; font-size: 22px; 
+#banner {height: 90vh; margin-top: 20px;	
+	.wrap {width: 900px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 80%; font-size: 22px; 
 		img {height: 200px; width: auto;}
 		h1 {line-height: 58px; font-weight: 300; font-size: 36px; text-align: center}
 	}
 }
 
 // Projects
-#projects {margin-bottom: 200px;
+#projects {margin-bottom: 200px; padding-top: 40px;
 	h4 {margin-bottom: 20px}
 	.wrap {
 		#projectFilter {display: flex; margin: 0 auto 60px; width: 327.09px; border: 1px solid $light; border-radius: 5px; overflow: hidden; 
@@ -53,7 +53,7 @@ p {opacity: 0.4}
 			div.show {background-color: $darker;}
 		}
 		#projectsWrap {display: flex; justify-content: space-between; flex-flow: row wrap; width: 100%;
-			.card {width: 28%; display: inline-block; margin: 0 30px 60px; position: relative; 
+			.card {width: 28%; flex: 1 0 auto; display: inline-block; margin: 0 30px 60px; position: relative; 
 				.thumb-wrap {width: 100%; height: 208px; position: relative; transition: all 0.2s ease; background-color: $darker; box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3); border-radius: 5px; display: flex; justify-content: center; align-items: center; overflow: hidden; object-fit: cover;
 					.overlay {display: flex; justify-content: center; align-items: center; opacity: 0; background-color: rgba(0,0,0,0.7); transition: all 0.2s ease; position: absolute; height: 100%; width: 100%; top: 0; left: 0;
 						a {transition: all 0.4s ease; transform: translateY(40px); display: block; width: 26px; height: 26px; font-size: 26px; padding: 18px; margin: 0 8px; border-radius: 100%; display: inline-flex; justify-content: center; align-items: center; background-color: $blue; box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3);

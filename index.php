@@ -4,10 +4,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ludolf</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+	<link rel="manifest" href="./fav/site.webmanifest">
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./dist/css/app.min.css">
+
+	<script type="text/javascript" src="./dist/js/hotjar.js"></script>
+
 </head>
 <body>
 
@@ -59,6 +67,7 @@
 					</script>"
 				?>
 				<script>
+					const tools = document.querySelector('#tool')
 					function genProjects() {
 						const filters = document.querySelectorAll('.filter')
 						const proWrap = document.querySelector('#projectsWrap')
@@ -88,14 +97,22 @@
 							}
 						})
 					}
-					document.querySelector('#tool').click()
+					tools.click()
 
 					function terms() {
 						if (!localStorage.accept) {
-							if (confirm('Please note that the universities own the rights to these—please do not share them. By selecting \"OK\", you agree.')) {
-								localStorage.accept = true
+							if (confirm('\r\nPLEASE NOTE:\r\nThe universities, along with 2U, own the rights to these components. Please do not share them.\r\nBy selecting \"OK\" you agree to never share these components.\r\nA digital acceptance signature will be logged.')) {
+								fetch('./dist/controllers/accept.php')
+								.then(r => {
+									localStorage.accept = true
+								})
+								.catch(e => {
+									alert('Oops! An error occurred. Please try again.\r\n' + e)
+									return window.location.reload()
+								})
+								
 							} else {
-								document.querySelector('#tool').click()
+								tools.click()
 							}
 						}
 					}
